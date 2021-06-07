@@ -1,0 +1,19 @@
+<!--index.wxml-->
+<view class="index">
+ <view class="header">
+   <view class="header-auto">
+  <view class="clock">打卡</view>
+    <view class="userImg">
+        <image src="../../static/tabber/mine.png" />
+    </view>
+  </view>
+ </view>
+ <view class="main">
+    <view wx:for="{{sujustList}}" wx:key="item.id">
+    <view class="sujustClass">
+      <van-button type="info" block round >{{item.name}}</van-button>
+      <i></i>
+    </view>
+    </view>
+ </view>
+</view>
